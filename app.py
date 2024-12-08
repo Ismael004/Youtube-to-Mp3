@@ -83,8 +83,8 @@ def download():
         return send_file(file_stream, as_attachment=True, download_name=f"{yt.title}.mp3")
     
     except Exception as e:
-        return f"An error occurred: {str(e)}", 500
+        return f"An error opccurred: {str(e)}", 500
 
 
 if __name__ == '__main__':
-    app.run(ssl_context='adhoc')
+    app.run()
